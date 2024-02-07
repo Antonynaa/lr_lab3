@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Create User')
+
+@section('content')
     <form action="{{route('users.store')}}" method="post">
         @csrf
         <input type="text" name="name" placeholder="Name"> <br>
@@ -13,5 +10,4 @@
         <input type="password" name="password" placeholder="Password"> <br>
         <button type="submit">Save</button>
     </form>
-</body>
-</html>
+@endsection    

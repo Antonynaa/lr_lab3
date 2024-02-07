@@ -6,6 +6,10 @@
     <title>@yield('title')</title>
 </head>
 <body>
+    <nav>
+        <a href="{{route('users.index')}}">Users</a>
+        <a href="{{route('phones.index')}}">Phones</a>
+    </nav>
     @yield('content')
 </body>
 </html>
